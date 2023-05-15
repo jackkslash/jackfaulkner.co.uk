@@ -1,37 +1,8 @@
 ---
+import HeroLinks from "../components/HeroLinks";
 import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon";
 ---
 
 <Layout title="Jack">
-  <main class="ml-8">
-    <div>
-      <div class="text-6xl font-bold dark:text-white pb-4">jack</div>
-      <div class="text-lg text-gray-600 dark:text-gray-400 max-w-sm mt-2">
-        software dude
-      </div>
-    </div>
-    <div class="grid grid-flow-col w-48 mt-3 text-lg gap-2">
-      <a
-        href="https://github.com/jackkslash"
-        class="cursor-pointer fill-current focus:outline-none transition duration-300 ease-in-out hover:text-indigo-900 dark:hover:text-indigo-200"
-        >github</a
-      >
-      <a
-        href="https://twitter.com/jackkslash"
-        class="cursor-pointer fill-current focus:outline-none transition duration-300 ease-in-out hover:text-indigo-900 dark:hover:text-indigo-200"
-        >twitter</a
-      >
-      <a
-        href="https://www.linkedin.com/in/jackaaronfaulkner/"
-        class="cursor-pointer fill-current focus:outline-none transition duration-300 ease-in-out hover:text-indigo-900 dark:hover:text-indigo-200"
-        >linkedin</a
-      >
-      <a
-        href="/"
-        class="cursor-pointer fill-current focus:outline-none transition duration-300 ease-in-out hover:text-indigo-900 dark:hover:text-indigo-200"
-        >email</a
-      >
-    </div>
-  </main>
+  <HeroLinks client:load />
 </Layout>
