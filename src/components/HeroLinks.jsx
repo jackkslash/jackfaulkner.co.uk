@@ -14,7 +14,7 @@ export default function HeroLinks(props) {
         <div>
           <div className="text-6xl font-bold dark:text-white pb-4">jack</div>
           <div className="text-lg text-gray-600 dark:text-gray-400 max-w-sm mt-2">
-            software dude
+            software/web developer
           </div>
         </div>
         <div className="grid grid-flow-col w-48 mt-3 text-lg gap-2">

@@ -6,6 +6,12 @@ export interface Project {
 
 export const ProjectData: Project[] = [
   {
+    title: "Tombot",
+    description:
+      "Discord bot that watches the ethereum block for user submitted wallets",
+    href: "https://github.com/jackkslash/tombot",
+  },
+  {
     title: "F1Stats",
     description: "F1 Statistics and data site built with react.",
     href: "https://github.com/jackkslash/F1Stats",
