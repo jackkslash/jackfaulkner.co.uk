@@ -1,4 +1,6 @@
 ---
+const posts = await Astro.glob("../pages/post/*.md");
+import Card from "../components/projectCard.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -6,7 +8,19 @@ import Layout from "../layouts/Layout.astro";
   <main class="ml-8">
     <div class="text-6xl font-bold pb-2 text-white">blog</div>
     <div class="text-lg text-gray-600 dark:text-gray-400 max-w-sm mt-2">
-      I'll write some day
+      A list of blog posts of mine.
+    </div>
+    <div class="text-lg text-gray-600 dark:text-gray-400 max-w-sm mt-8">
+      {
+        posts.map((data) => (
+          <div>
+            <Card
+              title={data.frontmatter.title}
+              desc={data.frontmatter.description}
+            />
+          </div>
+        ))
+      }
     </div>
   </main>
 </Layout>
