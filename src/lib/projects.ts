@@ -6,6 +6,11 @@ export interface Project {
 
 export const ProjectData: Project[] = [
   {
+    title: "Huddle",
+    description: " A Modern Fullstack Social News Website and Forum",
+    href: "https://github.com/jackkslash/huddl",
+  },
+  {
     title: "Tombot",
     description:
       "Discord bot that watches the ethereum block for user submitted wallets",
