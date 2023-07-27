@@ -20,12 +20,6 @@ export const ProjectData: Project[] = [
     href: "https://github.com/jackkslash/tombot",
   },
   {
-    title: "F1Stats",
-    description: "F1 Statistics and data site built with react.",
-    important: false,
-    href: "https://github.com/jackkslash/F1Stats",
-  },
-  {
     title: "jackfaulkner.co.uk",
     description: "Personal site built in astro.",
     important: true,
@@ -36,17 +30,5 @@ export const ProjectData: Project[] = [
     description: "Meme reverse image search using vector database and AI.",
     important: true,
     href: "https://github.com/jackkslash/MSAI",
-  },
-  {
-    title: "Scripts",
-    description: "Utility Bash Scripts",
-    important: false,
-    href: "https://github.com/jackkslash/scripts",
-  },
-  {
-    title: "Arceus",
-    description: "Q and A tool for Twitch.",
-    important: false,
-    href: "https://github.com/jackkslash/Arceus",
   },
 ];
