@@ -16,7 +16,7 @@ import { ProjectData } from "../lib/notable";
         class="text-white underline underline-offset-4">projects page</a
       >.
     </div>
-    <div class="mt-8 space-y-6">
+    <div class="mt-8 space-y-6 mr-8">
       {
         ProjectData.map((data) => (
           <Card title={data.title} link={data.href} desc={data.description} />
