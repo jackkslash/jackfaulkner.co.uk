@@ -5,6 +5,11 @@ export interface Project {
   href?: string;
 }
 
+export interface Link {
+  title: string;
+  href: string;
+}
+
 export const ProjectData: Project[] = [
   {
     title: "Huddle",
@@ -30,5 +35,24 @@ export const ProjectData: Project[] = [
     description: "Meme reverse image search using vector database and AI.",
     important: true,
     href: "https://github.com/jackkslash/MSAI",
+  },
+];
+
+export const Links: Link[] = [
+  {
+    title: "github",
+    href: "https://github.com/jackkslash",
+  },
+  {
+    title: "twitter",
+    href: "https://twitter.com/jackkslash",
+  },
+  {
+    title: "linkedin",
+    href: "https://www.linkedin.com/in/jackaaronfaulkner/",
+  },
+  {
+    title: "email",
+    href: "mailto:jackfaulknerbis@hotmail.co.uk",
   },
 ];

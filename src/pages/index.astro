@@ -1,28 +1,29 @@
 ---
 import Hero from "../components/hero.astro";
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/projectCard.astro";
 import Links from "../components/links.astro";
+import Card from "../components/projectCard.astro";
 import { ProjectData } from "../lib/notable";
 ---
 
 <Layout title="Jack">
   <Hero />
-  <div class="ml-8 mt-8 mr-8">
-    <div class="text-2xl font-medium dark:text-white pb-4">projects</div>
-    <div class="mt-8 space-y-6">
+  <div class="mx-8 mt-8">
+    <h2 class="text-2xl font-bold mb-6">projects</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {
         ProjectData.map((data) => (
           <Card title={data.title} link={data.href} desc={data.description} />
         ))
       }
-      <br />
-      <a
-        href="https://github.com/jackkslash"
-        class="text-slate-300 underline underline-offset-2decoration-2 decoration-slate-800"
-        >more projects...</a
-      >
     </div>
+
+    <a
+      href="#"
+      class="cursor-pointer fill-current focus:outline-none transition duration-300 ease-in-out hover:text-indigo-900 dark:hover:text-indigo-200 mt-8 inline-block"
+      >all projects →</a
+    >
     <Links />
   </div>
 </Layout>
