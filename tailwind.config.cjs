@@ -13,10 +13,15 @@ module.exports = {
 						opacity: '1',
 						transform: 'translateY(0)'
 					},
-				}
+				},
+				blink: {
+					'0%, 50%': { opacity: 1 },
+					'50.01%, 100%': { opacity: 0 },
+				},
 			},
 			animation: {
-				'fade-in-down': 'fade-in-down 0.5s ease-out'
+				'fade-in-down': 'fade-in-down 0.5s ease-out',
+				'blink': 'blink 1s steps(1) infinite'
 			}
 		},
 	},
