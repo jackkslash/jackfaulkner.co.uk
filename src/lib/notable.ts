@@ -12,6 +12,12 @@ export interface Link {
 
 export const ProjectData: Project[] = [
   {
+    title: "toolbelt",
+    description: "A collection of tools I use for my day to day work.",
+    important: true,
+    href: "https://github.com/jackkslash/toolbelt",
+  },
+  {
     title: "Huddle",
     important: true,
     description: " A Modern Fullstack Social News Website and Forum",
