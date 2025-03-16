@@ -12,6 +12,12 @@ export interface Link {
 
 export const ProjectData: Project[] = [
   {
+    title: "chatterBox",
+    description: "Chatterbox is a lightweight, fast, and intelligent AI-powered assistant built with Next.js, React, and Bun. It integrates multiple AI models and web search capabilities for enhanced responses.",
+    important: true,
+    href: "https://github.com/jackkslash/ChatterBox",
+  },
+  {
     title: "toolbelt",
     description: "A collection of tools I use for my day to day work.",
     important: true,
